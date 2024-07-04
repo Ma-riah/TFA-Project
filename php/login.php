@@ -18,7 +18,7 @@ if (isset($_POST['login']))
 		if (password_verify($password, $result['Password']))
 		{
 			$_SESSION['user_name'] = $result['Username'];
-			header("location: welcome.php");
+			header("location: home.php");
 			exit;
         }
 		else
